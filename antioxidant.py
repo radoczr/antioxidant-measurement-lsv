@@ -259,7 +259,7 @@ x_fit = np.linspace(x_min, x_max, 200)
 plt.plot(x_fit, slope * x_fit + intercept)
 
 text = (
-    f"y = ({slope:.2e} ± {slope_ci:.2e})x + ({intercept:.2e} ± {intercept_ci:.2e})\n"
+    f"y = ({slope:.4e} ± {slope_ci:.4e})x + ({intercept:.4e} ± {intercept_ci:.4e})\n"
     f"R² = {r_value**2:.4f}\n"
     f"F = {F:.2f}\n"
     f"|x₀| = {abs(x0):.2e} ± {x0_err:.2e}"
